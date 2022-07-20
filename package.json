@@ -41,7 +41,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-typescript": "^7.15.0",
-    "@size-limit/preset-small-lib": "^6.0.3",
+    "@size-limit/preset-small-lib": "^7.0.8",
     "@types/jest": "^27.0.3",
     "@types/jsonwebtoken": "^8.5.6",
     "@types/node": "^17.0.21",
