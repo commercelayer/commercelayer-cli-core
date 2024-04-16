@@ -1,3 +1,10 @@
+# [5.0.0-rc.3](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.0.0-rc.2...v5.0.0-rc.3) (2024-04-16)
+
+
+### Bug Fixes
+
+* fix dependencies ([4fc516e](https://github.com/commercelayer/commercelayer-cli-core/commit/4fc516ee7d3d78ee4ce37bca838c84dc0f9179d9))
+
 # [5.0.0-rc.2](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.0.0-rc.1...v5.0.0-rc.2) (2024-04-15)
 
 
