@@ -1,3 +1,13 @@
+# [6.0.0-beta.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.2.3-beta.1...v6.0.0-beta.1) (2024-08-20)
+
+
+* feat!: migrate to oclif/core v4 and oclif/test v4 ([d610a79](https://github.com/commercelayer/commercelayer-cli-core/commit/d610a793de1f8e5ac2511ab783a1cd74ea26e9a0))
+
+
+### BREAKING CHANGES
+
+* migrate to oclif/core v4 and oclif/test v4
+
 ## [5.2.3-beta.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.2.2...v5.2.3-beta.1) (2024-08-20)
 
 
