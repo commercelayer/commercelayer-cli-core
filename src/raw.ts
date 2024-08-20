@@ -6,10 +6,10 @@ import { clColor } from '.'
 
 const rawRequest = async (
   config: {
-    baseUrl: string;
-    resource: string;
-    accessToken: string;
-    operation: Operation;
+    baseUrl: string
+    resource: string
+    accessToken: string
+    operation: Operation
   },
   data: any,
   id?: string,
@@ -58,7 +58,7 @@ const readDataFile = (file: string): any => {
 
 enum Operation {
   Create = 'POST',
-  Update = 'PATCH',
+  Update = 'PATCH'
 }
 
 

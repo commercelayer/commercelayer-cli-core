@@ -23,37 +23,37 @@ export type AccessToken = {
 
 export type AccessTokenInfo = {
   organization?: {
-    id: string;
-    slug: string;
-  };
+    id: string
+    slug: string
+  }
   application: {
-    id: string;
-    kind: 'integration' | 'sales_channel' | 'user';
-    public: boolean;
-  };
-  test: boolean;
-  exp?: number;
-  rand?: number;
+    id: string
+    kind: 'integration' | 'sales_channel' | 'user'
+    public: boolean
+  }
+  test: boolean
+  exp?: number
+  rand?: number
   owner?: {
-    id: string;
-    type: 'Customer' | 'User';
-  };
+    id: string
+    type: 'Customer' | 'User'
+  }
   market?: {
-    id: string[];
-    price_list_id: string;
-    stock_location_ids?: string[];
-    geocoder_id?: string;
-    allows_external_prices: boolean;
-  };
+    id: string[]
+    price_list_id: string
+    stock_location_ids?: string[]
+    geocoder_id?: string
+    allows_external_prices: boolean
+  }
   scope?: AuthScope,
   user?: { id: string }
 }
 
 
 export type CustomToken = {
-  accessToken: string;
-  info: AccessTokenInfo;
-  expMinutes: number;
+  accessToken: string
+  info: AccessTokenInfo
+  expMinutes: number
 }
 
 
@@ -74,7 +74,7 @@ const generateAccessToken = (token: AccessTokenInfo, sharedSecret: string, minut
   const payload = {
     ...tokenData,
     exp: Math.floor(Date.now() / 1000) + (minutes * 60),
-    rand: Math.random(),
+    rand: Math.random()
   }
 
   const algo = config.api.token_encoding_algorithm as jwt.Algorithm
@@ -86,7 +86,7 @@ const generateAccessToken = (token: AccessTokenInfo, sharedSecret: string, minut
   return {
     accessToken,
     info: info as AccessTokenInfo,
-    expMinutes: minutes,
+    expMinutes: minutes
   }
 
 }
