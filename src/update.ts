@@ -6,9 +6,9 @@ import updateNotifier from 'update-notifier-cjs'
 
 
 interface Package {
-	name: string;
-	version: string;
-	description: string;
+	name: string
+	version: string
+	description: string
 }
 
 const UPDATE_CHECK_INTERVAL_HOURS = 1
