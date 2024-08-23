@@ -11,9 +11,6 @@ importers:
       '@commercelayer/js-auth':
         specifier: ^6.3.1
         version: 6.3.1
-      '@oclif/core':
-        specifier: ^4.0.18
-        version: 4.0.18
       chalk:
         specifier: ^4.1.2
         version: 4.1.2
@@ -33,6 +30,9 @@ importers:
       '@commercelayer/eslint-config-ts':
         specifier: ^1.4.5
         version: 1.4.5(@types/eslint@9.6.0)(eslint@8.57.0)(typescript@5.5.4)
+      '@oclif/core':
+        specifier: ^4.0.18
+        version: 4.0.18
       '@semantic-release/changelog':
         specifier: ^6.0.3
         version: 6.0.3(semantic-release@24.1.0(typescript@5.5.4))

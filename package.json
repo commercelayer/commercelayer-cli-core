@@ -36,6 +36,7 @@
     "@babel/preset-env": "^7.25.4",
     "@babel/preset-typescript": "^7.24.7",
     "@commercelayer/eslint-config-ts": "^1.4.5",
+    "@oclif/core": "^4.0.18",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.5.12",
@@ -53,7 +54,6 @@
   },
   "dependencies": {
     "@commercelayer/js-auth": "^6.3.1",
-    "@oclif/core": "^4.0.18",
     "chalk": "^4.1.2",
     "jsonwebtoken": "^9.0.2",
     "update-notifier-cjs": "^5.1.6"
