@@ -24,7 +24,6 @@
   },
   "keywords": [
     "ecommerce",
-    "jamstack",
     "commercelayer"
   ],
   "files": [
@@ -58,6 +57,9 @@
     "chalk": "^4.1.2",
     "jsonwebtoken": "^9.0.2",
     "update-notifier-cjs": "^5.1.6"
+  },
+  "peerDependencies": {
+    "@oclif/core": ">=3"
   },
   "repository": "github:commercelayer/commercelayer-cli-core",
   "publishConfig": {
