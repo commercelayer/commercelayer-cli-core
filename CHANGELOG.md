@@ -1,3 +1,12 @@
+# [6.0.0-beta.2](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.1...v6.0.0-beta.2) (2024-08-23)
+
+
+### Bug Fixes
+
+* add v6 release config ([da700c1](https://github.com/commercelayer/commercelayer-cli-core/commit/da700c1dee5aaec6988c0cabaed0d0ae21cc9734))
+* fix dependencies ([69d4dd6](https://github.com/commercelayer/commercelayer-cli-core/commit/69d4dd6ebd9682c573c7c13560602745c757c2aa))
+* fix release config ([94e4f83](https://github.com/commercelayer/commercelayer-cli-core/commit/94e4f83c81223b700db8ca0ea80ebaebcfedfbf1))
+
 # [6.0.0-beta.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.2.3-beta.1...v6.0.0-beta.1) (2024-08-20)
 
 
