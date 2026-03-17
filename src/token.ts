@@ -3,6 +3,8 @@ import config from './config'
 import { type AppAuth } from './application'
 import { type ApiMode } from './api'
 import { authenticate, revoke, type AuthenticateOptions } from '@commercelayer/js-auth'
+import type { KeyValObj, KeyValString } from './command'
+import { dotNotationToObject } from './util'
 
 
 export type AuthScope = string | string[]
@@ -10,15 +12,18 @@ export type AuthScope = string | string[]
 
 export type AccessToken = {
   accessToken: string;
-  tokenType: 'bearer' | 'Bearer';
-  expiresIn: number;
-  expires: Date;
-  scope: AuthScope;
-  createdAt: number;
-  error?: string;
-  errorDescription?: string;
+  tokenType: 'bearer' | 'Bearer'
+  expiresIn: number
+  expires: Date
+  scope: AuthScope
+  createdAt: number
+  error?: string
+  errorDescription?: string
 }
 
+
+export type ApplicationKind = typeof config.application.kinds[number]
+export type OwnerType = typeof config.api.token_owner_types[number]
 
 
 export type AccessTokenInfo = {
@@ -28,7 +33,7 @@ export type AccessTokenInfo = {
   }
   application: {
     id: string
-    kind: 'integration' | 'sales_channel' | 'user'
+    kind: ApplicationKind
     public: boolean
   }
   test: boolean
@@ -36,7 +41,7 @@ export type AccessTokenInfo = {
   rand?: number
   owner?: {
     id: string
-    type: 'Customer' | 'User'
+    type: OwnerType
   }
   market?: {
     id: string[]
@@ -96,24 +101,29 @@ const getAccessToken = async (auth: AppAuth): Promise<AccessToken> => {
 
   let accessToken
 
-    const scope = auth.scope ? (Array.isArray(auth.scope) ? auth.scope.map(s => s.trim()).join(',') : auth.scope) : ''
+  const scope = auth.scope ? (Array.isArray(auth.scope) ? auth.scope.map(s => s.trim()).join(',') : auth.scope) : ''
 
-    const credentials: any = {
-      clientId: auth.clientId,
-      clientSecret: auth.clientSecret,
-      slug: auth.slug,
-      domain: auth.domain,
-      scope
-    }
+  const credentials: any = {
+    clientId: auth.clientId,
+    clientSecret: auth.clientSecret,
+    slug: auth.slug,
+    domain: auth.domain,
+    scope
+  }
 
-    if (auth.email && auth.password) {
-      credentials.username = auth.email
-      credentials.password = auth.password
-      accessToken = await authenticate('password', credentials as AuthenticateOptions<'password'>)
-    }
-    else accessToken = await authenticate('client_credentials', credentials as AuthenticateOptions<'client_credentials'>)
+  if (auth.email && auth.password) {
+    credentials.username = auth.email
+    credentials.password = auth.password
+    accessToken = await authenticate('password', credentials as AuthenticateOptions<'password'>)
+  }
+  else
+  if (auth.assertion) {
+    credentials.assertion = auth.assertion
+    accessToken = await authenticate('urn:ietf:params:oauth:grant-type:jwt-bearer', credentials as AuthenticateOptions<'urn:ietf:params:oauth:grant-type:jwt-bearer'>)
+  }
+  else accessToken = await authenticate('client_credentials', credentials as AuthenticateOptions<'client_credentials'>)
 
-  
+
 
   if (!accessToken) throw new Error('Unable to get access token')
   else
@@ -150,3 +160,28 @@ const getTokenEnvironment = (token: string | AccessTokenInfo): ApiMode => {
 
 
 export { decodeAccessToken, generateAccessToken, getAccessToken, revokeAccessToken, isAccessTokenExpiring, getTokenEnvironment }
+
+
+export const buildAssertionPayload = (ownerType: OwnerType, ownerId: string, customClaim?: KeyValString): any => {
+
+  const clClaimKey = 'https://commercelayer.io/claims'
+
+  const assertion: KeyValObj = {
+    [clClaimKey]: {
+      owner: {
+        type: ownerType,
+        id: ownerId
+      }
+    }
+  }
+
+  // Build custom claim
+  if (customClaim && (Object.keys(customClaim).length > 0)) {
+    const cClaim = dotNotationToObject(customClaim)
+    assertion[clClaimKey].custom_claim = cClaim
+  }
+
+
+  return assertion
+
+}

@@ -20,7 +20,8 @@ interface AppAuth {
 	scope?: AuthScope
 	email?: string
 	password?: string
-	api?: ApiType
+	api?: ApiType,
+	assertion?: string
 }
 
 interface AppInfo extends AppKey, AppAuth {
@@ -58,7 +59,7 @@ const appKeyMatch = (app1?: AppKey, app2?: AppKey): boolean => {
 const arrayScope = (scope?: AuthScope): string[] => {
 	if (!scope) return []
 	if (Array.isArray(scope)) return scope
-	const s = scope.replace(/[ ,;]/g, '_').split('_')
+	const s = scope.replace(/[ ,;]/g, '|').split('|')
 	return Array.isArray(s) ? s : [ s ]
 }
 

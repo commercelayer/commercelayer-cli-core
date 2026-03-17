@@ -2,6 +2,7 @@ import config from './config'
 import { rawRequest, readDataFile, Operation } from './raw'
 import { denormalize } from './jsonapi'
 import type { Method } from './types'
+import inflector from './inflector'
 
 
 type ApiMode = 'test' | 'live'
@@ -11,7 +12,7 @@ export type { ApiMode, ApiType }
 
 /** Build base URL */
 const baseURL = (api: ApiType = 'core', slug?: string, domain?: string): string => {
-	const subdomain = (api === 'core')? (slug || api) : api
+	const subdomain = (['core', 'metrics'].includes(api))? (slug || api) : api
 	return `https://${subdomain.toLowerCase()}.${domain || config.api.default_domain}`
 }
 
@@ -29,8 +30,10 @@ const execMode = (liveFlag: string | boolean | undefined): ApiMode => {
 }
 
 
-const humanizeResource = (type: string): string => {
-	return type.replace(/_/g, ' ')
+const humanizeResource = (type: string, singular?: boolean): string => {
+	let hr = type.replace(/_/g, ' ')
+	if (singular) hr = inflector.singularize(hr)
+	return hr
 }
 
 

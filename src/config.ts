@@ -1,3 +1,4 @@
+
 const JOB_STATUSES: readonly string[] = [
 	'in_progress',
 	'pending',
@@ -50,6 +51,7 @@ const EXPORT_RESOURCE_TYPES: readonly string[] = [
 	'price_tiers',
 	'prices',
 	'refunds',
+	'returns',
 	'shipments',
 	'shipping_categories',
 	'shipping_methods',
@@ -102,6 +104,7 @@ const TAG_RESOURCE_TYPES: readonly string[] = [
 
 const LINK_RESOURCE_TYPES: readonly string[] = [
 	'orders',
+	'skus',
 	'sku_lists'
 ] as const
 
@@ -112,6 +115,7 @@ type ApiConfig = {
 	default_stg_domain: string
 	token_expiration_mins: number
 	token_encoding_algorithm: string
+	token_owner_types: string[]
 	requests_max_num_burst: number
 	requests_max_num_burst_cacheable: number
 	requests_max_num_burst_test: number
@@ -195,8 +199,14 @@ type ProvisioningConfig = {
 	applications: readonly string[]
 }
 
+type MetricsConfig = {
+	default_path: string
+	scope: string
+	applications: readonly string[]
+}
+
 type LinksConfig = {
-	default_domain: 'c11r.link',
+	default_domain: string,
 	linkable_resources: readonly string[]
 }
 
@@ -211,6 +221,7 @@ type Config = {
 	doc: DocConfig
 	tags: TagsConfig
 	provisioning: ProvisioningConfig
+	metrics: MetricsConfig
 	links: LinksConfig
 }
 
@@ -237,6 +248,7 @@ const config: Config = {
 		default_stg_domain: 'commercelayer.co',
 		token_expiration_mins: 60 * 4,	// 4 hours (14400 secs)
 		token_encoding_algorithm: 'HS512',
+		token_owner_types: ['Customer', 'User'] as const,
 		requests_max_num_burst: RATE_LIMIT.erl_burst_limit_uncachable_live,					// 50
 		requests_max_num_burst_cacheable: RATE_LIMIT.erl_burst_limit_cachable_live,			// 250
 		requests_max_num_burst_test: RATE_LIMIT.erl_burst_limit_uncachable_test,			// 25
@@ -250,11 +262,41 @@ const config: Config = {
 		requests_max_secs_oauth: 60,
 		requests_max_secs_avg: 60,
 		page_max_size: 25,
-		page_default_size: 10,
+		page_default_size: 10
 	},
 	application: {
-		kinds: ['integration', 'sales_channel', 'webapp', 'user'],
-		login_scopes: ['market', 'stock_location'],
+		kinds: [
+			'dashboard',
+			'user',
+			'metrics',
+			'contentful',
+			'bundles',
+			'customers',
+			'datocms',
+			'exports',
+			'external',
+			'gift_cards',
+			'imports',
+			'integration',
+			'inventory',
+			'orders',
+			'price_lists',
+			'promotions',
+			'resources',
+			'returns',
+			'sales_channel',
+			'sanity',
+			'shipments',
+			'skus',
+			'sku_lists',
+			'stock_transfers',
+			'subscriptions',
+			'tags',
+			'webapp',
+			'webhooks',
+			'zapier'
+		],
+		login_scopes: ['market', 'stock_location', 'store']
 	},
 	imports: {
 		max_size: 10_000,
@@ -264,7 +306,7 @@ const config: Config = {
 		attachment_expiration: 5
 	},
 	exports: {
-		max_size: 10_000,
+		max_size: 5_000,	// 10_000, --> https://github.com/commercelayer/support/issues/777
 		statuses: JOB_STATUSES,
 		types: EXPORT_RESOURCE_TYPES,
 		max_queue_length: 10,
@@ -277,10 +319,10 @@ const config: Config = {
 		max_queue_length: 10
 	},
 	webhooks: {
-		retry_number: 5,
+		retry_number: 5
 	},
 	cli: {	// Including Provisioning
-		applications: ['integration', 'sales_channel', 'user'],
+		applications: ['integration', 'sales_channel', 'user']
 	},
 	doc: {
 		core: 'https://docs.commercelayer.io/core/',
@@ -310,9 +352,14 @@ const config: Config = {
 		scope: 'provisioning-api',
 		applications: ['user']
 	},
+	metrics: {
+		default_path: 'metrics',
+		scope: 'metrics-api',
+		applications: ['integration', 'webapp']
+	},
 	links: {
-		linkable_resources: LINK_RESOURCE_TYPES,
-		default_domain: 'c11r.link'
+		default_domain: 'c11r.link',
+		linkable_resources: LINK_RESOURCE_TYPES
 	}
 } as const
 
