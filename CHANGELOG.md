@@ -1,3 +1,46 @@
+# [6.0.0-beta.5](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.4...v6.0.0-beta.5) (2026-03-17)
+
+
+### Bug Fixes
+
+* add metrics config ([5678a27](https://github.com/commercelayer/commercelayer-cli-core/commit/5678a27ed67a0a6320ffc6ddeec870a1240f1e13))
+* add singularize option to humanizeResource function ([f2912d1](https://github.com/commercelayer/commercelayer-cli-core/commit/f2912d17be2b821b4b75f1bbdb4c59cf1c8a5914))
+* export object conversion function and update dependencies ([0b558fb](https://github.com/commercelayer/commercelayer-cli-core/commit/0b558fb7eea87b053c751f6b5de48fb378c3caae))
+* fix auth ([131d14f](https://github.com/commercelayer/commercelayer-cli-core/commit/131d14fc8ec53964acfd9b7f93233760bc12ced0))
+* fix codeql action ([ef127e5](https://github.com/commercelayer/commercelayer-cli-core/commit/ef127e5ba4c17d16840c0871339fe9a398025b6e))
+* fix command help ([01ec3ee](https://github.com/commercelayer/commercelayer-cli-core/commit/01ec3eec26d0791c258be95e66a5fdd14a905237))
+* fix commandFlags function ([994489b](https://github.com/commercelayer/commercelayer-cli-core/commit/994489b212b31773540c27820ca8623535cf1611))
+* fix config types ([772d36c](https://github.com/commercelayer/commercelayer-cli-core/commit/772d36c90a50279cd6591cbca4670eb63edeb7f7))
+* fix dependencies ([40a24ef](https://github.com/commercelayer/commercelayer-cli-core/commit/40a24efa6f675310fe7850a3669d43531de22696))
+* fix dependencies ([d9b8ea8](https://github.com/commercelayer/commercelayer-cli-core/commit/d9b8ea813c055418c93a94c17eda6c89586337e6))
+* fix dependencies overrides ([5e35e5e](https://github.com/commercelayer/commercelayer-cli-core/commit/5e35e5ea8f33502205139dcbcedaa8ea990dfe64))
+* fix dotNotationToObject function ([a9bb9e4](https://github.com/commercelayer/commercelayer-cli-core/commit/a9bb9e40e3b30c4ec334988c2302dc2153e78f91))
+* fix exported types ([d356705](https://github.com/commercelayer/commercelayer-cli-core/commit/d3567056cef59ad6775111d39e010444190dd014))
+* fix filter predicates ([e3ac898](https://github.com/commercelayer/commercelayer-cli-core/commit/e3ac898b2d3d040a59a148b45e5516a612a8fe98))
+* fix links config and update login scopes ([8aa9657](https://github.com/commercelayer/commercelayer-cli-core/commit/8aa9657ea8e6d36cabe690283e45acaa9bd418ca))
+* fix release script ([9d7d91b](https://github.com/commercelayer/commercelayer-cli-core/commit/9d7d91b33983fc344ffb1b765a5348f77afb0a09))
+* fix scope in app config ([73f622f](https://github.com/commercelayer/commercelayer-cli-core/commit/73f622f48763dfedb269281cc725bd5ee0c526e0))
+* fix security issue ([ffe8b72](https://github.com/commercelayer/commercelayer-cli-core/commit/ffe8b729689620ba77dfb5f6d49efcd67004542d))
+* fix vulnerability issues ([351addf](https://github.com/commercelayer/commercelayer-cli-core/commit/351addfecd393e87ae4427a83158b04c349391d5))
+* remove filterFlags function ([d7ade1f](https://github.com/commercelayer/commercelayer-cli-core/commit/d7ade1f1e64775592358c5aeb0c80beb332d3d54))
+* update dependencies ([10ca285](https://github.com/commercelayer/commercelayer-cli-core/commit/10ca285f5b2343354956a082cc72fcae67dcad68))
+* update dependencies ([77d2557](https://github.com/commercelayer/commercelayer-cli-core/commit/77d25570d8cd5f051cf62966ad5155c6ab9d32c2))
+* update dependencies ([ed7d90c](https://github.com/commercelayer/commercelayer-cli-core/commit/ed7d90c9d9d75d34f624ee9e19b1e3337fd0eb8d))
+* update dependencies ([a3f9835](https://github.com/commercelayer/commercelayer-cli-core/commit/a3f98357573c6b9988744b80d5be0f53cb2fc9ce))
+
+
+### Features
+
+* add *_not_eq_or_null filters ([59d579d](https://github.com/commercelayer/commercelayer-cli-core/commit/59d579d98b9e4da7dc4f48f5643e4ad8adbcad49))
+* add basic support for metrics api ([66eeedd](https://github.com/commercelayer/commercelayer-cli-core/commit/66eeedd269b660a8f9bddc4d7afaafdb0dd5707b))
+* add eq_or_null and not_eq_or_null filters ([e4cd8d0](https://github.com/commercelayer/commercelayer-cli-core/commit/e4cd8d02cd8386fac0c4c09267d0469aeb51ccb2))
+* add function to filter command flags ([baec340](https://github.com/commercelayer/commercelayer-cli-core/commit/baec340c63b30084c45d2225f1bca3bdf021e5ad))
+* add returns to exportable resources ([9a01c45](https://github.com/commercelayer/commercelayer-cli-core/commit/9a01c4580dcd64cf540396b168fc828ade347210))
+* add support for assertion in token generation ([8530f32](https://github.com/commercelayer/commercelayer-cli-core/commit/8530f32c85970bd6f539eeab2276928a02781ee1))
+* add support for jwt assertion ([44ac910](https://github.com/commercelayer/commercelayer-cli-core/commit/44ac910941f1afe0c23bb666de5efdde5405321f))
+* limit exports size to 5000 records ([5111d6a](https://github.com/commercelayer/commercelayer-cli-core/commit/5111d6a4665b0e7605c531be2c38d5071500b565))
+* upgrade to oclif core v4 ([445bddd](https://github.com/commercelayer/commercelayer-cli-core/commit/445bdddac87133c4b50b431bd7d6f0c75d22afd9))
+
 # [6.0.0-beta.4](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.3...v6.0.0-beta.4) (2024-08-23)
 
 
