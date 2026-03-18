@@ -20,7 +20,8 @@
     "start": "tsx src/index.ts",
     "test": "jest --passWithNoTests",
     "test-local": "tsx test/spot.ts",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "release": "pnpm upgrade && pnpm lint && pnpm build"
   },
   "keywords": [
     "ecommerce",

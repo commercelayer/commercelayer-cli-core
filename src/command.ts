@@ -1,11 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 
-import type { Command } from "@oclif/core"
-import type { FlagInput } from "@oclif/core/lib/interfaces/parser"
+import type { Command, Interfaces } from "@oclif/core"
 
 
 /* Copy command flags excluding a subset */
-export const commandFlags = <T extends FlagInput>(flags: T, exclude?: Array<keyof T>): T => {
+export const commandFlags = <T extends Interfaces.FlagInput>(flags: T, exclude?: Array<keyof T>): T => {
 	// return Object.fromEntries(Object.entries(flags).filter(([key]) => !exclude?.includes(key))) as T
 	const filteredFlags: T = { ...flags }
 	// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
@@ -14,7 +13,7 @@ export const commandFlags = <T extends FlagInput>(flags: T, exclude?: Array<keyo
 }
 
 
-export const allFlags = (command: Command.Class): FlagInput => {
+export const allFlags = (command: Command.Class): Interfaces.FlagInput => {
 	return { ...command.flags, ...command.baseFlags }
 }
 

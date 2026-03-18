@@ -2,8 +2,8 @@ import { format, inspect } from 'util'
 import { sep, dirname } from 'path'
 import { homedir } from 'os'
 import { existsSync, mkdirSync } from 'fs'
-import type { Config } from '@oclif/core/lib/interfaces'
 import type { KeyValObj } from './command'
+import type { Interfaces } from '@oclif/core'
 
 
 /** Await ms milliseconds */
@@ -68,7 +68,7 @@ export const generateGroupUID = (): string => {
 }
 
 
-export const userAgent = (config: Config): string => {
+export const userAgent = (config: Interfaces.Config): string => {
 	return `${config.name.replace(/@commercelayer\/cli-plugin/, 'CLI')}/${config.version}`
 }
 
