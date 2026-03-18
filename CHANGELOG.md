@@ -1,3 +1,10 @@
+# [6.0.0-beta.6](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.5...v6.0.0-beta.6) (2026-03-18)
+
+
+### Bug Fixes
+
+* fix types import ([ac5b095](https://github.com/commercelayer/commercelayer-cli-core/commit/ac5b09520dfc35672a86cbfea1bb7ca3de7c160d))
+
 # [6.0.0-beta.5](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.4...v6.0.0-beta.5) (2026-03-17)
 
 
