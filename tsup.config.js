@@ -7,7 +7,7 @@ export default defineConfig(() => ({
   sourcemap: env === 'development',
   clean: true,
   dts: true,
-  format: ['cjs', 'esm'],
+  format: ['esm', 'cjs'],
   minify: true,
   bundle: true,
   // treeshake: true,
