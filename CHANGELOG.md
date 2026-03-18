@@ -1,3 +1,10 @@
+# [6.0.0-beta.8](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.7...v6.0.0-beta.8) (2026-03-18)
+
+
+### Bug Fixes
+
+* fix exports ([7ce139c](https://github.com/commercelayer/commercelayer-cli-core/commit/7ce139c44f66609f6fe6eb1fc8007dece081ab4d))
+
 # [6.0.0-beta.7](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-beta.6...v6.0.0-beta.7) (2026-03-18)
 
 
