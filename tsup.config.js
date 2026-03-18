@@ -17,5 +17,5 @@ export default defineConfig(() => ({
   outDir: 'lib',
   splitting: false,
   shims: true,
-  cjsInterop: true
+  cjsInterop: false
 }))
