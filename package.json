@@ -7,10 +7,18 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.mjs",
+  "type": "commonjs",
   "exports": {
-    "types": "./lib/index.d.ts",
-    "require": "./lib/index.js",
-    "import": "./lib/index.mjs"
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      }
+    }
   },
   "scripts": {
     "lint": "eslint ./src --ext .ts",
@@ -20,7 +28,8 @@
     "start": "tsx src/index.ts",
     "test": "jest --passWithNoTests",
     "test-local": "tsx test/spot.ts",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "release": "pnpm upgrade && pnpm lint && pnpm build"
   },
   "keywords": [
     "ecommerce",
@@ -54,7 +63,7 @@
   },
   "dependencies": {
     "@commercelayer/js-auth": "^6.7.2",
-    "@oclif/core": "^3.27.0",
+    "@oclif/core": "^4.10.0",
     "chalk": "^4.1.2",
     "jsonwebtoken": "^9.0.3",
     "update-notifier-cjs": "^5.1.7"
