@@ -1,3 +1,15 @@
+# [6.0.0-beta.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.9-beta.1...v6.0.0-beta.1) (2026-03-19)
+
+
+### Features
+
+* upgrade to oclif core v4 ([2097c0e](https://github.com/commercelayer/commercelayer-cli-core/commit/2097c0e0497b2e602f20be47c25d531809ab5673))
+
+
+### BREAKING CHANGES
+
+* upgrade to oclif core v4
+
 ## [5.10.9-beta.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.8...v5.10.9-beta.1) (2026-03-19)
 
 
