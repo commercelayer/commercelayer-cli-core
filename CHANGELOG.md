@@ -1,3 +1,20 @@
+# [6.0.0-oclif4.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.8...v6.0.0-oclif4.1) (2026-03-19)
+
+
+### Bug Fixes
+
+* fix dependencies ([0a168bf](https://github.com/commercelayer/commercelayer-cli-core/commit/0a168bf594b75e23d1522e6df10eddf0d55d6351))
+
+
+### Features
+
+* upgrade oclif core to v4 ([c355ae3](https://github.com/commercelayer/commercelayer-cli-core/commit/c355ae339692b9a21933e862801037f061ae67ba))
+
+
+### BREAKING CHANGES
+
+* upgrade oclif core to v4
+
 ## [5.10.8](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.7...v5.10.8) (2026-03-16)
 
 
