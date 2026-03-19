@@ -1,3 +1,10 @@
+## [5.10.9-beta.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.8...v5.10.9-beta.1) (2026-03-19)
+
+
+### Bug Fixes
+
+* fix package.json and upgrade to oclif v4 ([783ef52](https://github.com/commercelayer/commercelayer-cli-core/commit/783ef528804860cf68aa8ba23bacdc367b019a54))
+
 ## [5.10.8](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.7...v5.10.8) (2026-03-16)
 
 
