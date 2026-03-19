@@ -36,7 +36,7 @@
   "devDependencies": {
     "@babel/preset-env": "^7.29.2",
     "@babel/preset-typescript": "^7.28.5",
-    "@biomejs/biome": "^2.4.11",
+    "@biomejs/biome": "^2.4.12",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/jest": "^29.5.14",
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@commercelayer/js-auth": "^6.7.2",
-    "@oclif/core": "^4.10.0",
+    "@oclif/core": "^4.10.5",
     "chalk": "^4.1.2",
     "jsonwebtoken": "^9.0.3",
     "update-notifier-cjs": "^5.1.7"
