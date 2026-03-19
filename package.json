@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@commercelayer/js-auth": "^6.7.2",
-    "@oclif/core": "^3.27.0",
+    "@oclif/core": "^4.10.0",
     "chalk": "^4.1.2",
     "jsonwebtoken": "^9.0.3",
     "update-notifier-cjs": "^5.1.7"
