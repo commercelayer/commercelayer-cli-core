@@ -47,7 +47,7 @@ export default class CLIBaseHelp extends Help {
 	// display help for a command
 	async showCommandHelp(command: Command.Loadable): Promise<void> {
 		if (PRINT_TRACE) console.log('---------- showCommandHelp')
-			super.showCommandHelp(command)
+			await super.showCommandHelp(command)
 			/*
 		const name = command.id
 		const depth = name ? name.split(':').length : 1
