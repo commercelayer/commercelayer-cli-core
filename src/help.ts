@@ -1,5 +1,4 @@
 import { type Command, CommandHelp, Help, type Interfaces } from '@oclif/core'
-// import type { Topic } from '@oclif/core/lib/interfaces'
 import { capitalize } from './text'
 
 
