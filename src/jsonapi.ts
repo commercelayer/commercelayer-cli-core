@@ -30,7 +30,7 @@ const denormalizeResource = (res: any, included: any[]): any => {
 
 const denormalize = (response: any): any => {
 
-	let denormalizedResponse
+	let denormalizedResponse: any
 
 	if (response.links) delete response.links
 

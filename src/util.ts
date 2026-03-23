@@ -1,8 +1,8 @@
-import { format, inspect } from 'util'
-import { sep, dirname } from 'path'
-import { homedir } from 'os'
-import { existsSync, mkdirSync } from 'fs'
-import type { Config } from '@oclif/core/lib/interfaces'
+import { existsSync, mkdirSync } from 'node:fs'
+import { homedir } from 'node:os'
+import { dirname, sep } from 'node:path'
+import { format, inspect } from 'node:util'
+import type { Interfaces } from '@oclif/core'
 import type { KeyValObj } from './command'
 
 
@@ -42,7 +42,7 @@ export const specialFolder = (filePath: string, createIfNotExists: boolean = fal
 
 	// Special directory (home / desktop)
 	// eslint-disable-next-line no-useless-escape
-	const root = filePath.toLowerCase().split(/[\\\/]/g)[0]
+	const root = filePath.toLowerCase().split(/[\\/]/g)[0]
 	if (specialFolders.includes(root)) {
 		let filePrefix = homedir()
 		if (root === 'desktop') filePrefix += `${sep}Desktop`
@@ -68,7 +68,7 @@ export const generateGroupUID = (): string => {
 }
 
 
-export const userAgent = (config: Config): string => {
+export const userAgent = (config: Interfaces.Config): string => {
 	return `${config.name.replace(/@commercelayer\/cli-plugin/, 'CLI')}/${config.version}`
 }
 

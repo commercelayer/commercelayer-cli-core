@@ -1,10 +1,9 @@
 
 import { fixDashedFlagValue } from '../src/command'
-import { clApi } from '../src'
 
 const argv = ['-o', 'costa-coffee-demo', '-i', '-a2il5AjVhLJAldaykzE9A8LtA6mOty8Pkp3INIW0D8', '-S', 'market:15769', '-a', 'costa-south']
 
-const clientId = '-a2il5AjVhLJAldaykzE9A8LtA6mOty8Pkp3INIW0D8'
+// const clientId = '-a2il5AjVhLJAldaykzE9A8LtA6mOty8Pkp3INIW0D8'
 
 const flag = {
 	name: 'clientId',
