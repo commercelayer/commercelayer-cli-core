@@ -1,3 +1,10 @@
+# [6.0.0-oclif4.3](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.2...v6.0.0-oclif4.3) (2026-03-23)
+
+
+### Features
+
+* add biome and remove eslint ([c5bb880](https://github.com/commercelayer/commercelayer-cli-core/commit/c5bb880570a858f244b6e395969feaf7ac96b346))
+
 # [6.0.0-oclif4.2](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.1...v6.0.0-oclif4.2) (2026-03-19)
 
 
