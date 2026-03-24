@@ -17,6 +17,13 @@
 
 * add biome ([d4819e7](https://github.com/commercelayer/commercelayer-cli-core/commit/d4819e732dd1194cf3906eb03889845c579a976a))
 
+# [6.0.0-oclif4.5](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.4...v6.0.0-oclif4.5) (2026-03-24)
+
+
+### Bug Fixes
+
+* update dependencies and fic linter config ([66f47c1](https://github.com/commercelayer/commercelayer-cli-core/commit/66f47c1538def5957998eb4946c8446815e5e57d))
+
 # [6.0.0-oclif4.4](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.3...v6.0.0-oclif4.4) (2026-03-23)
 
 
