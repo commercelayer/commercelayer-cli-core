@@ -1,3 +1,16 @@
+# [6.0.0-oclif4.7](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.6...v6.0.0-oclif4.7) (2026-03-25)
+
+
+### Bug Fixes
+
+* fix linter errors ([aebd346](https://github.com/commercelayer/commercelayer-cli-core/commit/aebd3469c6a9ebe2a3f5ef1c0e63bfec54e77d53))
+* update dependencies ([7c3b5bf](https://github.com/commercelayer/commercelayer-cli-core/commit/7c3b5bfb53634790e2982c229765e86e573bc2dd))
+
+
+### Features
+
+* add biome ([d4819e7](https://github.com/commercelayer/commercelayer-cli-core/commit/d4819e732dd1194cf3906eb03889845c579a976a))
+
 # [6.0.0-oclif4.6](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.5...v6.0.0-oclif4.6) (2026-03-24)
 
 
