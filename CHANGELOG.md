@@ -1,16 +1,10 @@
-## [5.11.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.11.0...v5.11.1) (2026-04-14)
-
-
-### Bug Fixes
-
-* update dependencies ([c1e4cb4](https://github.com/commercelayer/commercelayer-cli-core/commit/c1e4cb44328d05e3fec8c8cb1c634d1f0678d214))
-
-# [5.11.0](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.8...v5.11.0) (2026-03-25)
+# [6.0.0-oclif4.7](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.6...v6.0.0-oclif4.7) (2026-03-25)
 
 
 ### Bug Fixes
 
 * fix linter errors ([aebd346](https://github.com/commercelayer/commercelayer-cli-core/commit/aebd3469c6a9ebe2a3f5ef1c0e63bfec54e77d53))
+* update dependencies ([7c3b5bf](https://github.com/commercelayer/commercelayer-cli-core/commit/7c3b5bfb53634790e2982c229765e86e573bc2dd))
 
 
 ### Features
