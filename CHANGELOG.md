@@ -1,3 +1,10 @@
+# [6.0.0-oclif4.10](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.9...v6.0.0-oclif4.10) (2026-03-26)
+
+
+### Bug Fixes
+
+* fix copilot issues ([239692f](https://github.com/commercelayer/commercelayer-cli-core/commit/239692f25328718aac9db0f8bd79344104cbfbf0))
+
 # [6.0.0-oclif4.9](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.8...v6.0.0-oclif4.9) (2026-03-26)
 
 
