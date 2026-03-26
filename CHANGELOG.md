@@ -1,3 +1,10 @@
+# [6.0.0-oclif4.9](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.8...v6.0.0-oclif4.9) (2026-03-26)
+
+
+### Features
+
+* replace jest with vitest ([bcd8400](https://github.com/commercelayer/commercelayer-cli-core/commit/bcd84000e4d0e69d6b574eb9096d28966d7b1628))
+
 # [6.0.0-oclif4.8](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.7...v6.0.0-oclif4.8) (2026-03-25)
 
 
