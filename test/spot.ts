@@ -1,9 +1,9 @@
 
 import { fixDashedFlagValue } from '../src/command'
 
-const argv = ['-o', 'costa-coffee-demo', '-i', '-a2il5AjVhLJAldaykzE9A8LtA6mOty8Pkp3INIW0D8', '-S', 'market:15769', '-a', 'costa-south']
+const argv = ['-o', 'costa-coffee-demo', '-i', '-CLIENT_ID_HERE', '-S', 'market:15769', '-a', 'costa-south']
 
-// const clientId = ''
+// const clientId = 'CLIENT_ID_HERE'
 
 const flag = {
 	name: 'clientId',
@@ -14,7 +14,7 @@ const parsed = {
 	argv: [],
 	flags: {
 	  organization: 'costa-coffee-demo',
-	  clientId: '____-a2il5AjVhLJAldaykzE9A8LtA6mOty8Pkp3INIW0D8',
+	  clientId: '____-CLIENT_ID_HERE',
 	  scope: [ 'market:15769' ],
 	  alias: 'costa-south'
 	},
@@ -24,7 +24,7 @@ const parsed = {
 	  {
 		type: 'flag',
 		flag: 'clientId',
-		input: '____-a2il5AjVhLJAldaykzE9A8LtA6mOty8Pkp3INIW0D8'
+		input: '____-CLIENT_ID_HERE'
 	  },
 	  { type: 'flag', flag: 'scope', input: 'market:15769' },
 	  { type: 'flag', flag: 'alias', input: 'costa-south' }

@@ -1,9 +1,21 @@
+# [6.0.0-oclif4.11](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.10...v6.0.0-oclif4.11) (2026-03-27)
+
+
+### Bug Fixes
+
+* fix review comments ([bf9575d](https://github.com/commercelayer/commercelayer-cli-core/commit/bf9575dc69e8124a42c15c80ad6e7e473e2bd0d6))
+
 # [6.0.0-oclif4.10](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.9...v6.0.0-oclif4.10) (2026-03-26)
 
 
 ### Bug Fixes
 
 * fix copilot issues ([239692f](https://github.com/commercelayer/commercelayer-cli-core/commit/239692f25328718aac9db0f8bd79344104cbfbf0))
+
+
+### BREAKING CHANGES
+
+* minimum required Node.js version is now `>=22`; consumers on Node 18 or 20 must upgrade before using this release
 
 # [6.0.0-oclif4.9](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.8...v6.0.0-oclif4.9) (2026-03-26)
 
@@ -44,7 +56,7 @@
 
 ### Bug Fixes
 
-* update dependencies and fic linter config ([66f47c1](https://github.com/commercelayer/commercelayer-cli-core/commit/66f47c1538def5957998eb4946c8446815e5e57d))
+* update dependencies and fix linter config ([66f47c1](https://github.com/commercelayer/commercelayer-cli-core/commit/66f47c1538def5957998eb4946c8446815e5e57d))
 
 # [6.0.0-oclif4.4](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.3...v6.0.0-oclif4.4) (2026-03-23)
 
