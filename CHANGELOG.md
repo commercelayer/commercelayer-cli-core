@@ -1,3 +1,10 @@
+# [6.0.0-oclif4.12](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.11...v6.0.0-oclif4.12) (2026-03-27)
+
+
+### Bug Fixes
+
+* replace hard-coded client ID with placeholder in test/spot.ts ([9900845](https://github.com/commercelayer/commercelayer-cli-core/commit/990084577b6c6d5cfc34443062fac8e8fb6509ec))
+
 # [6.0.0-oclif4.11](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.10...v6.0.0-oclif4.11) (2026-03-27)
 
 
