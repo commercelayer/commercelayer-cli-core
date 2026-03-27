@@ -9,7 +9,7 @@ export default defineConfig({
       include: ['src/**/*.ts'],
     },
     passWithNoTests: true,
-    include: ['specs/**/*.spec.ts'],
+    include: ['**/*.test.ts', '**/*.spec.ts'],  
   },
   resolve: {
     alias: {
