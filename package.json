@@ -4,7 +4,10 @@
   "description": "Commerce Layer Javascript CLI core lib",
   "author": "Pierluigi Viti <pierluigi@commercelayer.io>",
   "license": "MIT",
-  "repository": "github:commercelayer/commercelayer-cli-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commercelayer/commercelayer-cli-core.git"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "module": "lib/index.mjs",
