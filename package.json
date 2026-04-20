@@ -1,6 +1,6 @@
 {
   "name": "@commercelayer/cli-core",
-  "version": "6.0.0-oclif4.12",
+  "version": "6.0.0-oclif4.13",
   "description": "Commerce Layer Javascript CLI core lib",
   "author": "Pierluigi Viti <pierluigi@commercelayer.io>",
   "license": "MIT",
