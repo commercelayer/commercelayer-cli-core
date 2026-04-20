@@ -1,3 +1,10 @@
+# [6.0.0-oclif4.15](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.14...v6.0.0-oclif4.15) (2026-04-20)
+
+
+### Bug Fixes
+
+* fix config files ([40bdbba](https://github.com/commercelayer/commercelayer-cli-core/commit/40bdbba0867488f47a3533e330df6c0997d37915))
+
 # [6.0.0-oclif4.14](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.13...v6.0.0-oclif4.14) (2026-04-20)
 
 
