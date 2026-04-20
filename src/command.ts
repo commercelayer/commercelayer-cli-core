@@ -40,9 +40,8 @@ const fixValueType = (val: string): string | number | boolean | null | undefined
 
 	if (v === 'null') v = null	// null check
 	else
-		
-		// biome-ignore lint/suspicious/noDoubleEquals: intentional type coercion for number check
-				if (Number(v) == v) v = Number(v)	// number check
+		// biome-ignore lint/suspicious/noDoubleEquals: left for compatibility with old linter
+		if (Number(v) == v) v = Number(v)	// number check
 		else v = (v === 'true') ? true : (v === 'false') ? false : v	// boolean check
 
 	return v
