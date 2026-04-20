@@ -1,9 +1,9 @@
 
-import type { Command, Interfaces } from "@oclif/core"
+import type { Command } from "@oclif/core"
 
 
 /* Copy command flags excluding a subset */
-export const commandFlags = <T extends Interfaces.FlagInput>(flags: T, exclude?: Array<keyof T>): T => {
+export const commandFlags = <T extends Record<string, any>>(flags: T, exclude?: Array<keyof T>): T => {
 	// return Object.fromEntries(Object.entries(flags).filter(([key]) => !exclude?.includes(key))) as T
 	const filteredFlags: T = { ...flags }
 	if (exclude) for (const e of exclude) delete filteredFlags[e]
@@ -11,7 +11,7 @@ export const commandFlags = <T extends Interfaces.FlagInput>(flags: T, exclude?:
 }
 
 
-export const allFlags = (command: Command.Class): Interfaces.FlagInput => {
+export const allFlags = (command: Command.Class): Record<string, any> => {
 	return { ...command.flags, ...command.baseFlags }
 }
 
