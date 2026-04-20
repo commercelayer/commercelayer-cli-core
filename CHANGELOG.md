@@ -1,21 +1,149 @@
-## [5.11.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.11.0...v5.11.1) (2026-04-14)
+# [6.0.0-oclif4.15](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.14...v6.0.0-oclif4.15) (2026-04-20)
 
 
 ### Bug Fixes
 
-* update dependencies ([c1e4cb4](https://github.com/commercelayer/commercelayer-cli-core/commit/c1e4cb44328d05e3fec8c8cb1c634d1f0678d214))
+* fix config files ([40bdbba](https://github.com/commercelayer/commercelayer-cli-core/commit/40bdbba0867488f47a3533e330df6c0997d37915))
 
-# [5.11.0](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.8...v5.11.0) (2026-03-25)
+# [6.0.0-oclif4.14](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.13...v6.0.0-oclif4.14) (2026-04-20)
+
+
+### Bug Fixes
+
+* fix oclif interfaces ([0e2b028](https://github.com/commercelayer/commercelayer-cli-core/commit/0e2b0280501b4fa982f2bbac9b408986d2c68c63))
+
+# [6.0.0-oclif4.13](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.12...v6.0.0-oclif4.13) (2026-04-20)
+
+
+### Bug Fixes
+
+* fix copilot issues ([1d05694](https://github.com/commercelayer/commercelayer-cli-core/commit/1d05694ea32d51ac93115a65351c7758255a3ff0))
+* fix dependencies ([f6a7c44](https://github.com/commercelayer/commercelayer-cli-core/commit/f6a7c4481657c4aef8b9cb0f9958c0c54aee4fa6))
+* fix dependencies ([ba460f5](https://github.com/commercelayer/commercelayer-cli-core/commit/ba460f563dddccb9ad337e7ac92eacbbe0ec2b29))
+* fix error messages ([4566447](https://github.com/commercelayer/commercelayer-cli-core/commit/4566447c301bd40df69e5fb59f8a84e27827efea))
+* fix linter errors ([c597679](https://github.com/commercelayer/commercelayer-cli-core/commit/c5976794f2cad66e1b85b78ee758cc8465b81b1b))
+* fix review comments ([9f0da6d](https://github.com/commercelayer/commercelayer-cli-core/commit/9f0da6de2f23d37b0f66f5c93b2e056a4ccdcbe2))
+* replace hard-coded client ID with placeholder in test/spot.ts ([a5dd1d4](https://github.com/commercelayer/commercelayer-cli-core/commit/a5dd1d432be44be36f242119816131da50ce598c))
+* update dependencies ([25df121](https://github.com/commercelayer/commercelayer-cli-core/commit/25df1215cbf56dbbebd4308618dd1fa196ae5454))
+* update dependencies ([c1e4cb4](https://github.com/commercelayer/commercelayer-cli-core/commit/c1e4cb44328d05e3fec8c8cb1c634d1f0678d214))
+* update dependencies and fic linter config ([d8a08ce](https://github.com/commercelayer/commercelayer-cli-core/commit/d8a08ce6d9b3629d7f45ba6c4f043a20f7e01c4b))
+
+
+### Features
+
+* add biome and remove eslint ([fb9f09f](https://github.com/commercelayer/commercelayer-cli-core/commit/fb9f09ff8051bd5528362cf02587ef7be5a236c5))
+* replace jest with vitest ([499d09d](https://github.com/commercelayer/commercelayer-cli-core/commit/499d09ddb6e4c4dec494a843afc2cb07695ce15b))
+* upgrade oclif core to v4 ([de7dc41](https://github.com/commercelayer/commercelayer-cli-core/commit/de7dc41f0a5549386f5d547730856ea1c1bf65d3))
+
+
+### BREAKING CHANGES
+
+* upgrade oclif core to v4
+
+# [6.0.0-oclif4.12](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.11...v6.0.0-oclif4.12) (2026-03-27)
+
+
+### Bug Fixes
+
+* replace hard-coded client ID with placeholder in test/spot.ts ([9900845](https://github.com/commercelayer/commercelayer-cli-core/commit/990084577b6c6d5cfc34443062fac8e8fb6509ec))
+
+# [6.0.0-oclif4.11](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.10...v6.0.0-oclif4.11) (2026-03-27)
+
+
+### Bug Fixes
+
+* fix review comments ([bf9575d](https://github.com/commercelayer/commercelayer-cli-core/commit/bf9575dc69e8124a42c15c80ad6e7e473e2bd0d6))
+
+# [6.0.0-oclif4.10](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.9...v6.0.0-oclif4.10) (2026-03-26)
+
+
+### Bug Fixes
+
+* fix copilot issues ([239692f](https://github.com/commercelayer/commercelayer-cli-core/commit/239692f25328718aac9db0f8bd79344104cbfbf0))
+
+
+### BREAKING CHANGES
+
+* minimum required Node.js version is now `>=22`; consumers on Node 18 or 20 must upgrade before using this release
+
+# [6.0.0-oclif4.9](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.8...v6.0.0-oclif4.9) (2026-03-26)
+
+
+### Features
+
+* replace jest with vitest ([bcd8400](https://github.com/commercelayer/commercelayer-cli-core/commit/bcd84000e4d0e69d6b574eb9096d28966d7b1628))
+
+# [6.0.0-oclif4.8](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.7...v6.0.0-oclif4.8) (2026-03-25)
+
+
+### Bug Fixes
+
+* update dependencies ([749c0d8](https://github.com/commercelayer/commercelayer-cli-core/commit/749c0d82f1782440fa581a0a00fc97d2578da546))
+
+# [6.0.0-oclif4.7](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.6...v6.0.0-oclif4.7) (2026-03-25)
 
 
 ### Bug Fixes
 
 * fix linter errors ([aebd346](https://github.com/commercelayer/commercelayer-cli-core/commit/aebd3469c6a9ebe2a3f5ef1c0e63bfec54e77d53))
+* update dependencies ([7c3b5bf](https://github.com/commercelayer/commercelayer-cli-core/commit/7c3b5bfb53634790e2982c229765e86e573bc2dd))
 
 
 ### Features
 
 * add biome ([d4819e7](https://github.com/commercelayer/commercelayer-cli-core/commit/d4819e732dd1194cf3906eb03889845c579a976a))
+
+# [6.0.0-oclif4.6](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.5...v6.0.0-oclif4.6) (2026-03-24)
+
+
+### Bug Fixes
+
+* fix linter errors ([7e30c1e](https://github.com/commercelayer/commercelayer-cli-core/commit/7e30c1e6d223782eb22b760d9a05eea8c56362e7))
+
+# [6.0.0-oclif4.5](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.4...v6.0.0-oclif4.5) (2026-03-24)
+
+
+### Bug Fixes
+
+* update dependencies and fix linter config ([66f47c1](https://github.com/commercelayer/commercelayer-cli-core/commit/66f47c1538def5957998eb4946c8446815e5e57d))
+
+# [6.0.0-oclif4.4](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.3...v6.0.0-oclif4.4) (2026-03-23)
+
+
+### Bug Fixes
+
+* fix dependencies ([c35c4e6](https://github.com/commercelayer/commercelayer-cli-core/commit/c35c4e62e279752116c64140e988783dabc086fa))
+
+# [6.0.0-oclif4.3](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.2...v6.0.0-oclif4.3) (2026-03-23)
+
+
+### Features
+
+* add biome and remove eslint ([c5bb880](https://github.com/commercelayer/commercelayer-cli-core/commit/c5bb880570a858f244b6e395969feaf7ac96b346))
+
+# [6.0.0-oclif4.2](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.1...v6.0.0-oclif4.2) (2026-03-19)
+
+
+### Bug Fixes
+
+* fix error messages ([cd42786](https://github.com/commercelayer/commercelayer-cli-core/commit/cd4278601a366e76469c7b19440700f6eaa3ace8))
+
+# [6.0.0-oclif4.1](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.8...v6.0.0-oclif4.1) (2026-03-19)
+
+
+### Bug Fixes
+
+* fix dependencies ([0a168bf](https://github.com/commercelayer/commercelayer-cli-core/commit/0a168bf594b75e23d1522e6df10eddf0d55d6351))
+
+
+### Features
+
+* upgrade oclif core to v4 ([c355ae3](https://github.com/commercelayer/commercelayer-cli-core/commit/c355ae339692b9a21933e862801037f061ae67ba))
+
+
+### BREAKING CHANGES
+
+* upgrade oclif core to v4
 
 ## [5.10.8](https://github.com/commercelayer/commercelayer-cli-core/compare/v5.10.7...v5.10.8) (2026-03-16)
 

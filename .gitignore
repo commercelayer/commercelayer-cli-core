@@ -1,5 +1,6 @@
 build/
 dist/
+tsconfig.tsbuildinfo
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,macos

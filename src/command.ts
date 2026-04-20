@@ -1,20 +1,17 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
 
 import type { Command } from "@oclif/core"
-import type { FlagInput } from "@oclif/core/lib/interfaces/parser"
 
 
 /* Copy command flags excluding a subset */
-export const commandFlags = <T extends FlagInput>(flags: T, exclude?: Array<keyof T>): T => {
+export const commandFlags = <T extends Record<string, any>>(flags: T, exclude?: Array<keyof T>): T => {
 	// return Object.fromEntries(Object.entries(flags).filter(([key]) => !exclude?.includes(key))) as T
 	const filteredFlags: T = { ...flags }
-	// eslint-disable-next-line @typescript-eslint/no-dynamic-delete
 	if (exclude) for (const e of exclude) delete filteredFlags[e]
 	return filteredFlags
 }
 
 
-export const allFlags = (command: Command.Class): FlagInput => {
+export const allFlags = (command: Command.Class): Record<string, any> => {
 	return { ...command.flags, ...command.baseFlags }
 }
 
@@ -43,9 +40,8 @@ const fixValueType = (val: string): string | number | boolean | null | undefined
 
 	if (v === 'null') v = null	// null check
 	else
-		
-		// biome-ignore lint/suspicious/noDoubleEquals: intentional type coercion for number check
-				if (Number(v) == v) v = Number(v)	// number check
+		// biome-ignore lint/suspicious/noDoubleEquals: left for compatibility with old linter
+		if (Number(v) == v) v = Number(v)	// number check
 		else v = (v === 'true') ? true : (v === 'false') ? false : v	// boolean check
 
 	return v
