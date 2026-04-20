@@ -1,3 +1,31 @@
+# [6.0.0-oclif4.13](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.12...v6.0.0-oclif4.13) (2026-04-20)
+
+
+### Bug Fixes
+
+* fix copilot issues ([1d05694](https://github.com/commercelayer/commercelayer-cli-core/commit/1d05694ea32d51ac93115a65351c7758255a3ff0))
+* fix dependencies ([f6a7c44](https://github.com/commercelayer/commercelayer-cli-core/commit/f6a7c4481657c4aef8b9cb0f9958c0c54aee4fa6))
+* fix dependencies ([ba460f5](https://github.com/commercelayer/commercelayer-cli-core/commit/ba460f563dddccb9ad337e7ac92eacbbe0ec2b29))
+* fix error messages ([4566447](https://github.com/commercelayer/commercelayer-cli-core/commit/4566447c301bd40df69e5fb59f8a84e27827efea))
+* fix linter errors ([c597679](https://github.com/commercelayer/commercelayer-cli-core/commit/c5976794f2cad66e1b85b78ee758cc8465b81b1b))
+* fix review comments ([9f0da6d](https://github.com/commercelayer/commercelayer-cli-core/commit/9f0da6de2f23d37b0f66f5c93b2e056a4ccdcbe2))
+* replace hard-coded client ID with placeholder in test/spot.ts ([a5dd1d4](https://github.com/commercelayer/commercelayer-cli-core/commit/a5dd1d432be44be36f242119816131da50ce598c))
+* update dependencies ([25df121](https://github.com/commercelayer/commercelayer-cli-core/commit/25df1215cbf56dbbebd4308618dd1fa196ae5454))
+* update dependencies ([c1e4cb4](https://github.com/commercelayer/commercelayer-cli-core/commit/c1e4cb44328d05e3fec8c8cb1c634d1f0678d214))
+* update dependencies and fic linter config ([d8a08ce](https://github.com/commercelayer/commercelayer-cli-core/commit/d8a08ce6d9b3629d7f45ba6c4f043a20f7e01c4b))
+
+
+### Features
+
+* add biome and remove eslint ([fb9f09f](https://github.com/commercelayer/commercelayer-cli-core/commit/fb9f09ff8051bd5528362cf02587ef7be5a236c5))
+* replace jest with vitest ([499d09d](https://github.com/commercelayer/commercelayer-cli-core/commit/499d09ddb6e4c4dec494a843afc2cb07695ce15b))
+* upgrade oclif core to v4 ([de7dc41](https://github.com/commercelayer/commercelayer-cli-core/commit/de7dc41f0a5549386f5d547730856ea1c1bf65d3))
+
+
+### BREAKING CHANGES
+
+* upgrade oclif core to v4
+
 # [6.0.0-oclif4.12](https://github.com/commercelayer/commercelayer-cli-core/compare/v6.0.0-oclif4.11...v6.0.0-oclif4.12) (2026-03-27)
 
 
